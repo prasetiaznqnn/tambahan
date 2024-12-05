@@ -1,105 +1,78 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Form Pengunjung - PT. Elastomix Indonesia</title>
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-    rel="stylesheet" />
-  <style>
-    body {
-      background-color: #f8f9fa;
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PT Elastomix Indonesia</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url("assets/img/WhatsApp\ Image\ 2024-12-04\ at\ 08.39.56_4fb37ef0.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: #003366;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            background-color: #003366;
+            /* Warna biru */
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #0055aa;
+            /* Warna biru lebih cerah saat hover */
+        }
+
+        a {
+            margin-top: 10px;
+        }
+    </style>
 </head>
 
 <body>
-  <div class="container mt-5">
-    <h1 class="text-center">Form Data Pengunjung</h1>
-    <form action="halaman_konfirmasi.html" method="GET">
-      <div class="mb-3">
-        <label for="nomor" class="form-label">Nomor:</label>
-        <input
-          type="text"
-          class="form-control"
-          id="nomor"
-          name="nomor"
-          required />
-      </div>
-      <div class="mb-3">
-        <label for="nama" class="form-label">Nama:</label>
-        <input
-          type="text"
-          class="form-control"
-          id="nama"
-          name="nama"
-          required />
-      </div>
-      <div class="mb-3">
-        <label for="nomor_id" class="form-label">Nomor ID:</label>
-        <input
-          type="text"
-          class="form-control"
-          id="nomor_id"
-          name="nomor_id"
-          required />
-      </div>
-      <div class="mb-3">
-        <label for="jumlah_kendaraan" class="form-label">Jumlah Kendaraan:</label>
-        <input
-          type="number"
-          class="form-control"
-          id="jumlah_kendaraan"
-          name="jumlah_kendaraan"
-          required />
-      </div>
-      <div class="mb-3">
-        <label for="perusahaan" class="form-label">Perusahaan:</label>
-        <input
-          type="text"
-          class="form-control"
-          id="perusahaan"
-          name="perusahaan"
-          required />
-      </div>
-      <div class="mb-3">
-        <label for="keperluan" class="form-label">Keperluan:</label>
-        <input
-          type="text"
-          class="form-control"
-          id="keperluan"
-          name="keperluan"
-          required />
-      </div>
-      <div class="mb-3">
-        <label class="form-label">Sudah Membuat Janji Bertemu:</label>
-        <div>
-          <input type="radio" id="ya" name="janji" value="ya" required />
-          <label for="ya">Ya</label>
-          <input
-            type="radio"
-            id="tidak"
-            name="janji"
-            value="tidak"
-            required />
-          <label for="tidak">Tidak</label>
+    <div class="container">
+        <h1>SELAMAT DATANG DI <p>PT ELASTOMIX INDONESIA</p>
+        </h1>
+        <div style="display: flex; flex-direction: column;">
+            <a href="INVENTORY-IT/index.php" class="button">INVENTORY-IT</a>
+            <a href="INVENTORY-PGA/index.php" class="button">INVENTORY-PGA</a>
+            <a href="INVENTORY-MTC/index.php" class="button">INVENTORY-MTC</a>
+            <a href="FORM-PENGUNJUNG/" class="button">FORM PENGUNJUNG</a>
+            <a href="FormReq/formreq.php" class="button">FORM REQUEST</a>
         </div>
-      </div>
-      <div class="mb-3">
-        <label for="nomor_kendaraan" class="form-label">Nomor Kendaraan:</label>
-        <input
-          type="text"
-          class="form-control"
-          id="nomor_kendaraan"
-          name="nomor_kendaraan"
-          required />
-      </div>
-      <button type="submit" class="btn btn-primary">Kirim Data</button>
-    </form>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    </div>
 </body>
 
 </html>
